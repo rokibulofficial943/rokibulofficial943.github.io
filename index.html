@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rakib’s Teaching Home — গড়াইটুপি, দর্শনা। ৬ষ্ঠ থেকে ১০ম এবং SSC Special Batch।">
+  <title>Rakib’s Teaching Home | গড়াইটুপি, দর্শনা</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--cyan:#08baf7;--cyan2:#00e5ff;--navy:#06121f;--card:#0b1d2d;--text:#eef9ff;--muted:#a9c2d2}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"Noto Sans Bengali",sans-serif;background:linear-gradient(135deg,#02070c,#071725 55%,#02101b);color:var(--text);line-height:1.7}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(2,8,14,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,229,255,.15)}
+    nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .brand img{width:48px;height:48px;object-fit:cover;border-radius:50%;border:2px solid var(--cyan)}
+    .brand span{font-size:17px}
+    .links{display:flex;gap:22px;align-items:center;font-size:14px}
+    .links a:hover{color:var(--cyan2)}
+    .menu{display:none;background:none;border:1px solid #2c6175;color:white;border-radius:8px;padding:8px 11px}
+    .hero{padding:76px 0 65px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:450px;height:450px;background:rgba(0,188,255,.12);filter:blur(90px);border-radius:50%;top:-180px;right:-130px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+    .badge{display:inline-block;padding:7px 14px;border:1px solid rgba(0,229,255,.35);border-radius:999px;color:var(--cyan2);background:rgba(0,229,255,.06);font-size:13px;margin-bottom:17px}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.12;margin-bottom:18px}
+    h1 span{color:var(--cyan2)}
+    .hero p{color:var(--muted);font-size:17px;max-width:650px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+    .btn{padding:12px 20px;border-radius:10px;border:1px solid rgba(0,229,255,.4);font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center}
+    .primary{background:linear-gradient(135deg,#00bff8,#008de5);color:#00111b;border:0}
+    .secondary{background:#0b1b29}
+    .poster{border-radius:22px;overflow:hidden;border:1px solid rgba(0,229,255,.28);box-shadow:0 20px 70px rgba(0,0,0,.45)}
+    .poster img{width:100%;display:block}
+    section{padding:74px 0}
+    .section-head{text-align:center;margin-bottom:38px}
+    .section-head h2{font-size:31px;margin-bottom:8px}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:linear-gradient(160deg,rgba(13,38,57,.9),rgba(5,18,29,.95));border:1px solid rgba(0,229,255,.12);border-radius:17px;padding:24px;transition:.25s}
+    .card:hover{transform:translateY(-4px);border-color:rgba(0,229,255,.4)}
+    .icon{font-size:27px;margin-bottom:10px}
+    .card h3{font-size:19px;margin-bottom:7px}
+    .card p{color:var(--muted);font-size:14px}
+    .highlight{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .batch{padding:30px;border-radius:18px;border:1px solid rgba(0,229,255,.22);background:linear-gradient(135deg,#07283a,#06131f)}
+    .batch h3{font-size:23px;color:var(--cyan2);margin-bottom:8px}
+    .batch ul{list-style:none;color:#c8dce7;margin-top:15px}
+    .batch li{margin:7px 0}
+    .batch li:before{content:"✓";color:var(--cyan2);font-weight:800;margin-right:9px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact-box{background:#071827;border:1px solid rgba(0,229,255,.15);padding:27px;border-radius:17px}
+    .contact-item{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .contact-item:last-child{border:0}
+    .contact-item strong{display:block;color:var(--cyan2);font-size:13px}
+    .contact-item a{font-size:17px}
+    footer{border-top:1px solid rgba(0,229,255,.12);padding:27px 0;color:#91aabb;text-align:center;font-size:13px}
+    @media(max-width:800px){
+      .links{display:none;position:absolute;top:74px;left:0;right:0;background:#04101a;padding:18px 4%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #123}
+      .links.open{display:flex}.menu{display:block}.hero-grid,.highlight,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}
+      .hero{padding-top:48px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">
+        <img src="rakibs-teaching-home.jpg" alt="Rakib’s Teaching Home">
+        <span>Rakib’s Teaching Home</span>
+      </a>
+      <button class="menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+      <div class="links">
+        <a href="#home">হোম</a><a href="#about">পরিচিতি</a><a href="#courses">কোর্স</a>
+        <a href="#batch">ব্যাচ</a><a href="#contact">যোগাযোগ</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">গড়াইটুপি, দর্শনা • শিক্ষাই হোক সাফল্যের চাবিকাঠি</div>
+        <h1>শেখার সঠিক জায়গা,<br><span>সাফল্যের নতুন পথ</span></h1>
+        <p>৬ষ্ঠ থেকে ১০ম শ্রেণি এবং SSC Special Batch-এর জন্য গণিত ও বিজ্ঞান বিভাগের নিয়মিত ও পরিকল্পিত পাঠদান।</p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">যোগাযোগ করুন</a>
+          <a class="btn secondary" href="https://facebook.com/groups/1961049007661294/" target="_blank" rel="noopener">Facebook Group ↗</a>
+        </div>
+      </div>
+      <div class="poster"><img src="rakibs-teaching-home.jpg" alt="Rakib’s Teaching Home poster"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head"><h2>কেন Rakib’s Teaching Home?</h2><p>শিক্ষার্থীর নিয়মিত অনুশীলন, পরীক্ষা ও অগ্রগতিকে গুরুত্ব দিয়ে পাঠদান।</p></div>
+      <div class="cards">
+        <div class="card"><div class="icon">📘</div><h3>অভিজ্ঞ শিক্ষক মণ্ডলী</h3><p>বিষয়ভিত্তিক ও সহজবোধ্যভাবে পাঠ বোঝানোর ওপর গুরুত্ব।</p></div>
+        <div class="card"><div class="icon">🎯</div><h3>মানসম্মত শিক্ষাদান</h3><p>মূল ধারণা পরিষ্কার করে নিয়মিত অনুশীলনের মাধ্যমে প্রস্তুতি।</p></div>
+        <div class="card"><div class="icon">📈</div><h3>নিয়মিত পরীক্ষা</h3><p>পরীক্ষার মাধ্যমে শিক্ষার্থীর প্রস্তুতি ও অগ্রগতি যাচাই।</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="container">
+      <div class="section-head"><h2>আমাদের ক্লাস</h2><p>শ্রেণি ও প্রয়োজন অনুযায়ী পরিকল্পিত পাঠদান</p></div>
+      <div class="highlight">
+        <div class="batch"><h3>৬ষ্ঠ–১০ম শ্রেণি</h3><p>স্কুল পর্যায়ের শিক্ষার্থীদের জন্য নিয়মিত একাডেমিক সহায়তা।</p><ul><li>গণিত</li><li>৯ম–১০ম শ্রেণির বিজ্ঞান বিভাগ</li><li>নিয়মিত পরীক্ষা ও অনুশীলন</li></ul></div>
+        <div class="batch" id="batch"><h3>SSC Special Batch</h3><p>SSC পরীক্ষার্থীদের জন্য বিশেষ পরিকল্পনায় প্রস্তুতি।</p><ul><li>বিষয়ভিত্তিক প্রস্তুতি</li><li>মডেল টেস্ট ও পরীক্ষা</li><li>দুর্বলতা চিহ্নিত করে অনুশীলন</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-head"><h2>যোগাযোগ</h2><p>ভর্তি ও ক্লাস সম্পর্কে জানতে সরাসরি যোগাযোগ করুন।</p></div>
+      <div class="contact">
+        <div class="contact-box">
+          <div class="contact-item"><strong>ঠিকানা</strong><span>শরব গাড়া, গড়াইটুপি, চুয়াডাঙ্গা</span></div>
+          <div class="contact-item"><strong>মোবাইল</strong><a href="tel:01973548306">01973-548306</a></div>
+          <div class="contact-item"><strong>বিকল্প নম্বর</strong><a href="tel:01781901396">01781-901396</a></div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-item"><strong>Facebook Group</strong><a href="https://facebook.com/groups/1961049007661294/" target="_blank" rel="noopener">Rakib’s Teaching Home ↗</a></div>
+          <div class="contact-item"><strong>ক্লাস</strong><span>৬ষ্ঠ থেকে ১০ম + SSC Special Batch</span></div>
+          <div class="contact-item"><strong>বিষয়</strong><span>গণিত + ৯ম–১০ম বিজ্ঞান বিভাগ</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Rakib’s Teaching Home • গড়াইটুপি, দর্শনা</footer>
+<script>
+  document.querySelectorAll('.links a').forEach(a => a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')));
+</script>
+</body>
+</html>
